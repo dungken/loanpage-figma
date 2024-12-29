@@ -1,0 +1,883 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+    font-family: "DM Sans", "Roobert TRIAL", sans-serif;
+    font-size: 18px;
+}
+
+.hero-section {
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px 25px 20px;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 0px;
+    max-width: 914px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 26.44px;
+    text-align: center;
+}
+
+.benefit-badges {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.badge-item {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.badge-item i {
+    color: #28a745;
+    font-size: 1.3rem;
+}
+
+.btn-cta {
+    background-color: #d8232a;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-cta:hover {
+    background-color: #a11b1f;
+}
+
+.review-section {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.review-section img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+.custom-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-button {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.feature-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.feature-button span {
+    color: #333;
+}
+
+.trustpilot-rating p {
+    margin: 0;
+    font-size: 1rem;
+}
+.card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    padding: 20px 80px;
+}
+
+.slide-fake .carousel-inner {
+    padding: unset;
+}
+
+.star-background {
+    display: flex;
+    gap: 5px;
+}
+
+.star-icon img {
+    width: 20px;
+    height: 20px;
+}
+.btn-danger {
+    background-color: #d60c1a;
+    border: none;
+    padding: 12px 24px;
+    font-weight: 400 !important;
+    border-radius: 8px;
+}
+
+.btn-danger:hover {
+    background-color: #b80a17;
+}
+
+.btn {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.btn-success {
+    color: #fff;
+}
+
+.star-background {
+    justify-items: center;
+    justify-content: center;
+}
+
+.star-background .star-icon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00b67b;
+}
+
+.star-background .star-icon img {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.star-background .star-icon:nth-child(5n) {
+    background: linear-gradient(to right, #00b67b 80%, #ccc 80%);
+}
+
+.custom-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.hero-section h1 {
+    width: 69%;
+}
+
+#verified-successes {
+    width: 95%;
+    margin: 0 auto;
+}
+/* Đảm bảo hình ảnh trong slider được căn chỉnh đẹp */
+.carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Hình ảnh trong layout gốc không bị méo */
+.verified-success-image {
+    max-width: 100%;
+    height: auto;
+}
+
+#grants-assistance-programs .card {
+    padding: 16px 20px 24px 20px;
+    border-radius: 0%;
+}
+
+#grants-assistance-programs .card .card-text,
+#step .card .card-text,
+.progress-bar-container span:not(:has(input[type="checkbox"])) {
+    color: #050b20;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#grants-assistance-programs .card h1,
+#step .card h1 {
+    font-weight: bold;
+    font-size: 80px;
+    color: #1344b5;
+}
+
+#grants-assistance-programs .card h5,
+#step .card h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.44px;
+}
+
+.custom-footer {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+}
+
+.custom-footer a.btn {
+    background: linear-gradient(90deg, #009642 0%, #22bb66 100%);
+    color: white;
+    font-weight: 500;
+    /* width: 70%; */
+    font-size: 16px;
+    line-height: 15px;
+}
+
+#proud-to-be-recognized-for-our-service {
+    background-color: #eef2fa;
+    padding: 70px;
+}
+
+#proud-to-be-recognized-for-our-service img {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+#proud-to-be-recognized-for-our-service img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+#step {
+    padding: 120px 0;
+}
+
+#step .custom-footer a.btn {
+    background: linear-gradient(90deg, #009642 0%, #22bb66 100%);
+    font-weight: 400;
+    width: 15%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#step .card {
+    border-radius: 0;
+}
+
+#success-stories {
+    background-color: #f1f2f5;
+    padding: 60px 0;
+}
+
+#success-stories .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#success-stories .card-header {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+#success-stories .card-body {
+    padding: 1.5rem;
+}
+
+#success-stories .card-footer {
+    background-color: #fff;
+    border-top: 1px solid #e9ecef;
+    padding: 1rem;
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.title {
+    width: 50%;
+    transform: translateY(30%);
+}
+
+.review {
+    background-color: #ffffff;
+    padding: 16px 24px;
+    /* width: 540px; */
+    width: 49%;
+}
+
+.progress-bar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin: 0;
+}
+
+.progress-bar {
+    width: 75%;
+    height: 10px;
+    background-color: #d3d3d3;
+    /* Màu nền xám */
+    border-radius: 5px;
+    position: relative;
+    margin-left: 20px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #000;
+    /* Màu của thanh đo (màu đen) */
+    border-radius: 5px;
+}
+
+.checkbox-container
+    input[type="checkbox"]:checked
+    + .progress-bar
+    .progress-fill {
+    background-color: #2196f3;
+    /* Thay đổi màu khi checkbox được chọn (có thể là màu khác) */
+}
+
+#success-stories .card {
+    min-height: 100%;
+    border-radius: 0;
+}
+
+#FAQ .box {
+    box-shadow: 0 0 4px 6px rgba(0, 0, 0, 0.03);
+    padding: 64px 95px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.accordion-button,
+.accordion-body {
+    color: #050b20;
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-button {
+    outline: none;
+    box-shadow: none;
+    font-size: 22px;
+}
+
+.accordion-button::after {
+    content: "+";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1344b5;
+}
+
+.accordion-button.collapsed::after {
+    content: "+";
+}
+
+.accordion-button:not(.collapsed) {
+    content: "-";
+    color: #1344b5;
+    background-color: unset;
+    box-shadow: unset;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#footer {
+    background-color: #eef5ff;
+    padding: 24px 10px;
+}
+
+.custom-footer {
+    text-align: center;
+    width: 100%;
+}
+
+#success-stories .slides {
+    display: flex;
+    cursor: grab;
+    user-select: none;
+    transform: translateX(0);
+    /* Xóa translateX(-100%) */
+    transition: transform 0.5s ease;
+    /* Thêm transition mặc định */
+}
+
+#success-stories .slides:active {
+    cursor: grabbing;
+}
+
+#success-stories .card {
+    width: 100%;
+    flex-shrink: 0;
+    pointer-events: none;
+}
+
+#verified-successes .row {
+    min-height: 400px;
+    height: 100%;
+}
+
+#verified-successes .row > * {
+    padding: 0 !important;
+}
+
+#verified-successes .col-12 {
+    height: 100%;
+}
+
+.verified-success-image {
+    /* display: block;
+    max-width: 100%; */
+}
+
+#proud-to-be-recognized-for-our-service p {
+    width: 60%;
+}
+
+.verified-success-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.verified-success-image-3 {
+    max-width: 100%;
+    height: auto;
+}
+
+#step > div {
+    padding: 0 95px;
+}
+
+#success-stories > div {
+    /* padding: 0 78px; */
+}
+
+.slide-fake {
+    display: none;
+}
+
+.slide-main {
+    display: block;
+}
+
+/* Hiệu ứng rung khi hover */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.btn-hover-shake:hover {
+    animation: shake 0.5s ease-in-out;
+}
+.btn-testi:hover {
+    background: linear-gradient(#22a159, #11ad57) !important;
+}
+#responsive-button:hover {
+    background: linear-gradient(#f32a63, #db111f) !important;
+}
+
+.custom-footer a.btn:hover {
+    background: linear-gradient(90deg, #14914a 0%, #1b7443 100%) !important;
+}
+/* Chuyển button xuống dưới khi ra ngoài section */
+.fixed-button {
+    position: fixed;
+    bottom: 0; /* Chuyển từ 10px thành 0 để sát cạnh dưới */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    width: auto;
+    margin: 0 auto; /* Đảm bảo không có margin */
+    padding: 15px; /* Đảm bảo không có padding */
+    border-radius: 0px !important;
+}
+
+.header-btn {
+    background-color: rgba(183, 183, 183, 0.43);
+}
+
+.header-btn:hover {
+    background-color: rgba(223, 221, 221, 0.43);
+}
+
+.section-container {
+    width: 100%;
+}
+
+.avatar-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+.avatar-row {
+    position: relative;
+    z-index: 2; /* Avatar nổi trên đường kẻ */
+}
+
+.avatar {
+    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin: -3px;
+}
+.avatar:hover {
+    box-shadow: 3px 2px 5px rgb(0 182 123);
+    cursor: pointer;
+}
+
+.divider {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #dbd6d6;
+    z-index: 1; /* Đường kẻ nằm dưới avatar */
+    margin: 0 auto;
+}
+
+@media (max-width: 320px) {
+    .hero-section {
+        padding: 5px;
+    }
+}
+@media (max-width: 660px) {
+    .hero-section {
+        padding: 0;
+    }
+    .hero-section h1 {
+        width: 100% !important;
+        font-size: 36px !important;
+        background: linear-gradient(90deg, #405ff2 0%, #1a37c3 100%);
+        padding: 5px;
+    }
+
+    .hero-section p {
+        padding: 0px 8px;
+    }
+
+    .progress-bar {
+        width: 45%;
+    }
+
+    .verified-success-image {
+        max-width: 50%;
+        padding: 10px;
+        margin-bottom: 0 !important;
+    }
+
+    #verified-successes {
+        width: 90%;
+    }
+
+    .header-btn {
+        padding: 5px 10px;
+        background-color: transparent;
+    }
+
+    .btn-full-width {
+        width: 100%;
+        border-radius: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        width: 100%;
+        /* margin-bottom: 50px; */
+    }
+
+    .hero-section h1 {
+        font-size: 55px;
+    }
+
+    .review {
+        width: 100% !important;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    .carousel-inner {
+        padding: 20px 40px;
+    }
+
+    button[data-bs-slide] {
+        /* display: none; */
+    }
+    #step .custom-footer a.btn {
+        width: 100%;
+    }
+
+    .list-logo div img {
+        width: 100%;
+    }
+
+    #proud-to-be-recognized-for-our-service h2 {
+        font-size: 30px !important;
+    }
+
+    #verified-successes .verified-success-image-3 {
+        margin-right: 0px !important;
+        width: 90% !important;
+    }
+
+    #verified-successes {
+        width: 88%;
+    }
+
+    #FAQ .toggle-icon {
+        /* display: none; */
+    }
+
+    #footer .container .w-75 {
+        width: 100% !important;
+    }
+
+    #grants-assistance-programs {
+        margin: 80px 0 !important;
+    }
+    #grants-assistance-programs .card {
+        padding: 20px 10px 20px 10px !important;
+    }
+
+    #grants-assistance-programs .card h5,
+    #step .card h5 {
+        font-size: 25px;
+        margin-bottom: 14px;
+    }
+
+    #grants-assistance-programs .card .card-text {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 12px;
+    }
+
+    #step {
+        padding: 30px 0;
+    }
+
+    #step > div > h2 {
+        font-size: 30px !important;
+    }
+
+    #step .card h1 {
+        font-size: 60px;
+    }
+
+    #success-stories h2 {
+        font-size: 25px !important;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        padding: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    #proud-to-be-recognized-for-our-service {
+        padding: 20px 10px;
+    }
+
+    #proud-to-be-recognized-for-our-service .w-50 {
+        width: 100% !important;
+    }
+
+    #step > div > h2 {
+        width: 100% !important;
+        font-size: 35px;
+        margin: 30px 0px !important;
+    }
+
+    #step .custom-footer a.btn {
+        width: unset;
+    }
+
+    #success-stories .card {
+        min-height: unset;
+    }
+
+    #prevButton,
+    #nextButton {
+        left: -3% !important;
+    }
+
+    #proud-to-be-recognized-for-our-service p {
+        width: 100%;
+        font-size: 16px !important;
+    }
+
+    #step > div {
+        padding: 0 20px;
+    }
+
+    #success-stories > div {
+        padding: 0 10px;
+    }
+
+    .img-center > div {
+        padding: 20px;
+    }
+
+    #step .custom-footer a.btn {
+        width: unset !important;
+    }
+
+    .slide-fake {
+        display: block;
+    }
+
+    .slide-fake .card {
+        width: 100% !important;
+    }
+
+    .slide-main {
+        display: none;
+    }
+
+    #FAQ > div {
+        padding: 40px 0px !important;
+    }
+
+    #FAQ .box {
+        padding: 20px !important;
+    }
+
+    #success-stories {
+        padding: 35px 0;
+        margin: 40px 0px;
+    }
+    #success-stories h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .title {
+        transform: unset;
+        text-align: center;
+        width: 100%;
+    }
+    .hero-section h1 {
+        width: 100%;
+    }
+    #grants-assistance-programs .row {
+        padding: 0 !important;
+    }
+    .review {
+        width: 97%;
+        margin: 0 auto;
+    }
+    .carousel-inner {
+        padding: 0;
+    }
+    #step .container h2 {
+        /* width: 77% !important; */
+    }
+
+    #prevButton {
+        top: unset !important;
+        bottom: -50px;
+        left: 44% !important;
+        padding: 4px 14px !important;
+    }
+
+    #nextButton {
+        top: unset !important;
+        bottom: -50px;
+        padding: 4px 14px !important;
+        right: 44% !important;
+    }
+
+    .custom-footer a.btn {
+        padding: 10px;
+    }
+
+    .verified-success-image-3 {
+        width: 50% !important;
+    }
+
+    .img-center {
+        display: block !important;
+    }
+
+    .img-center > img {
+        margin-bottom: 20px;
+    }
+
+    #grants-assistance-programs .card-body {
+        padding: unset !important;
+    }
+
+    #grants-assistance-programs .card {
+        padding: 10px 10px 10px 10px;
+        border-radius: 0%;
+    }
+
+    #step .custom-footer a.btn {
+        width: 20%;
+    }
+
+    #success-stories .card {
+        width: 30%;
+        flex-shrink: 0;
+        pointer-events: none;
+    }
+}
