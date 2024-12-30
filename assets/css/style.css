@@ -523,32 +523,33 @@
     }
 }
 
+#responsive-button:hover {
+    background: linear-gradient(#f32a63, #db111f) !important;
+    animation: shake 0.5s ease-in-out;
+}
 .btn-hover-shake:hover {
     animation: shake 0.5s ease-in-out;
 }
 .btn-testi:hover {
     background: linear-gradient(#22a159, #11ad57) !important;
 }
-#responsive-button:hover {
-    background: linear-gradient(#f32a63, #db111f) !important;
-}
 
 .custom-footer a.btn:hover {
     background: linear-gradient(90deg, #14914a 0%, #1b7443 100%) !important;
 }
-/* Chuyển button xuống dưới khi ra ngoài section */
+
 .fixed-button {
     position: fixed;
-    bottom: 0; /* Chuyển từ 10px thành 0 để sát cạnh dưới */
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 0;
+    right: 0;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
     z-index: 9999;
     width: auto;
-    margin: 0 auto; /* Đảm bảo không có margin */
-    padding: 15px; /* Đảm bảo không có padding */
+    margin: 0 auto;
+    padding: 15px;
     border-radius: 0px !important;
 }
-
 .header-btn {
     background-color: rgba(183, 183, 183, 0.43);
 }
@@ -656,6 +657,7 @@
     }
     .carousel-inner {
         padding: 20px 40px;
+        /* height: 580px; */
     }
 
     button[data-bs-slide] {
@@ -671,6 +673,7 @@
 
     #proud-to-be-recognized-for-our-service h2 {
         font-size: 30px !important;
+        margin-bottom: 40px !important;
     }
 
     #verified-successes .verified-success-image-3 {
@@ -751,7 +754,7 @@
     }
 
     #success-stories .card {
-        min-height: unset;
+        height: 560px;
     }
 
     #prevButton,
