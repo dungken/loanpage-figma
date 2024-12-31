@@ -34,11 +34,11 @@ window.addEventListener("DOMContentLoaded", function () {
 
     // Hàm để cập nhật nội dung nút theo kích thước màn hình
     function updateButtonContent() {
-        if (window.innerWidth < 768) {
-            button.textContent = "Start My Application"; // Nội dung cho màn hình nhỏ
-        } else {
-            button.textContent = "Get Approved Now"; // Nội dung cho màn hình lớn
-        }
+        // if (window.innerWidth < 1500) {
+        button.textContent = "Start My Application"; // Nội dung cho màn hình nhỏ
+        // } else {
+        //     button.textContent = "Get Approved Now"; // Nội dung cho màn hình lớn
+        // }
     }
 
     // Cập nhật nội dung nút ngay khi tải trang
@@ -52,7 +52,7 @@ window.addEventListener("DOMContentLoaded", function () {
         const rect = section.getBoundingClientRect();
 
         // Chỉ áp dụng class `fixed-button` khi màn hình nhỏ
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 1500) {
             if (rect.bottom < 0) {
                 button.classList.remove("btn-hover-shake");
                 button.classList.add("fixed-button");
