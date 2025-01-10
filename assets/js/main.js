@@ -66,3 +66,90 @@ window.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+// List of messages to show
+const messages = [
+    {
+        name: "Emily",
+        location: "Texas",
+        amount: "$10,000",
+        grant: "Unemployed Grant",
+    },
+    {
+        name: "John",
+        location: "Ohio",
+        amount: "$40,000",
+        grant: "Business Grant",
+    },
+    {
+        name: "Sarah",
+        location: "California",
+        amount: "$5,000",
+        grant: "Education Grant",
+    },
+    {
+        name: "David",
+        location: "Florida",
+        amount: "$82,000",
+        grant: "Housing Grant",
+    },
+    {
+        name: "Jessica",
+        location: "New York",
+        amount: "$8,000",
+        grant: "Unemployed Grant program",
+    },
+    {
+        name: "Maria",
+        location: "Illinois",
+        amount: "$115,000",
+        grant: "Business Grant program!",
+    },
+    {
+        name: "Christopher",
+        location: "Pennsylvania",
+        amount: "$6,000",
+        grant: "Education Grant program",
+    },
+    {
+        name: "Ashley",
+        location: "Arizona",
+        amount: "$75,000",
+        grant: "Housing Grant program",
+    },
+];
+
+let currentIndex = 0;
+
+function showPopup() {
+    // Get the popup element
+    const popup = document.getElementById("fomo");
+
+    // Update content dynamically
+    const currentMessage = messages[currentIndex];
+    popup.querySelector(".user_name").textContent = currentMessage.name;
+    popup.querySelector(".location").textContent = currentMessage.location;
+    popup.querySelector(".loanAmount").textContent = currentMessage.amount;
+    popup.querySelector(
+        ".Boked"
+    ).innerHTML = `was approved for a <span class="loanAmount">${currentMessage.amount}</span> from the ${currentMessage.grant}`;
+
+    // Show the popup
+    popup.style.display = "flex";
+
+    // Hide the popup after 5 seconds
+    setTimeout(() => {
+        popup.style.display = "none";
+    }, 5000);
+
+    // Move to the next message
+    currentIndex = (currentIndex + 1) % messages.length;
+}
+
+// Start the popup cycle
+function startPopupCycle() {
+    showPopup(); // Show the first popup immediately
+    setInterval(showPopup, 15000); // Show popup every 15 seconds
+}
+
+// Start when the DOM content is loaded
+document.addEventListener("DOMContentLoaded", startPopupCycle);
