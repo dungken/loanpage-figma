@@ -348,8 +348,59 @@
     gap: 10px;
 }
 
+.checkbox-container:hover input[type="checkbox"],
+.checkbox-container {
+    cursor: pointer;
+}
+.checkbox-container:hover .progress-fill-5-star {
+    background-color: #009855;
+}
+.checkbox-container:hover .progress-fill-4-star {
+    background-color: #73cf11;
+}
+.checkbox-container:hover .progress-fill-3-star {
+    background-color: #ffce00;
+}
+.checkbox-container:hover .progress-fill-2-star {
+    background-color: #ff8622;
+}
+.checkbox-container:hover .progress-fill-1-star {
+    background-color: #ff3722;
+}
+
 .checkbox-container input[type="checkbox"] {
     margin: 0;
+}
+
+.checkbox-container
+    input[type="checkbox"]:checked
+    ~ .progress-bar
+    .progress-fill-5-star {
+    background-color: #009855;
+}
+.checkbox-container
+    input[type="checkbox"]:checked
+    ~ .progress-bar
+    .progress-fill-4-star {
+    background-color: #73cf11;
+}
+.checkbox-container
+    input[type="checkbox"]:checked
+    ~ .progress-bar
+    .progress-fill-3-star {
+    background-color: #ffce00;
+}
+.checkbox-container
+    input[type="checkbox"]:checked
+    ~ .progress-bar
+    .progress-fill-2-star {
+    background-color: #ff8622;
+}
+.checkbox-container
+    input[type="checkbox"]:checked
+    ~ .progress-bar
+    .progress-fill-1-star {
+    background-color: #ff3722;
 }
 
 .progress-bar {
@@ -660,6 +711,10 @@
 
     #verifiedSuccessSlider {
         padding: 10px;
+    }
+
+    #footer-bottom {
+        margin-bottom: 55px;
     }
 }
 
