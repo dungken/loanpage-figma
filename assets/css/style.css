@@ -27,7 +27,7 @@
 #fomo {
     display: flex;
     position: fixed;
-    z-index: 9999;
+    z-index: 99999;
     align-items: center;
     gap: 10px;
     background: #fff;
@@ -35,13 +35,13 @@
     padding: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
-    width: 100%;
+    width: 95%;
     font-size: 14px;
     animation: slideUp 0.5s ease forwards; /* Thêm hiệu ứng */
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    top: 72%; /* Đẩy phần tử xuống 70% */
+    top: 90%; /* Đẩy phần tử xuống 70% */
     left: 50%;
     transform: translate(-50%, 50%); /* Bắt đầu từ dưới (ẩn) */
 }
