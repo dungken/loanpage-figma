@@ -712,6 +712,10 @@
     #verifiedSuccessSlider {
         padding: 10px;
     }
+
+    #footer-bottom {
+        margin-bottom: 55px;
+    }
 }
 
 @media (max-width: 768px) {
