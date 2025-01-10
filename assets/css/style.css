@@ -34,14 +34,14 @@
     border-radius: 12px;
     padding: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 415px;
+    max-width: 400px;
     width: 100%;
     font-size: 14px;
     animation: slideUp 0.5s ease forwards; /* Thêm hiệu ứng */
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    top: 65%; /* Đẩy phần tử xuống 70% */
+    top: 72%; /* Đẩy phần tử xuống 70% */
     left: 50%;
     transform: translate(-50%, 50%); /* Bắt đầu từ dưới (ẩn) */
 }
