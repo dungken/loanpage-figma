@@ -22,7 +22,107 @@
     width: 100% !important;
     background: linear-gradient(90deg, #405ff2 0%, #1a37c3 100%);
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
+}
+#fomo {
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 415px;
+    width: 100%;
+    font-size: 14px;
+    animation: slideUp 0.5s ease forwards; /* Thêm hiệu ứng */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    top: 65%; /* Đẩy phần tử xuống 70% */
+    left: 50%;
+    transform: translate(-50%, 50%); /* Bắt đầu từ dưới (ẩn) */
+}
+
+/* Keyframes cho hiệu ứng */
+@keyframes slideUp {
+    0% {
+        transform: translate(-50%, 100%); /* Bắt đầu từ dưới */
+        opacity: 0; /* Ẩn */
+    }
+    100% {
+        transform: translate(-50%, -50%); /* Về vị trí giữa */
+        opacity: 1; /* Hiện */
+    }
+}
+
+#fomo .product_image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#fomo .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#fomo .buyer {
+    line-height: 1.4;
+}
+
+#fomo .user_name {
+    font-weight: bold;
+    color: #333;
+    font-size: 15px;
+}
+
+#fomo .location {
+    color: #555;
+    font-size: 15px;
+}
+
+#fomo .Boked .loanAmount {
+    color: green;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#fomo .time {
+    margin-top: 0px;
+    font-size: 12px;
+    color: #555;
+    font-size: 15px;
+}
+
+#fomo .time img {
+    width: 15px;
+    border-radius: 50%;
+    filter: hue-rotate(352deg) saturate(150%) brightness(120%);
+    position: relative;
+    top: 2px;
+    margin-left: 8px;
+}
+
+#fomo .time .number {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#fomo .time .type {
+    color: #555;
+    font-size: 15px;
+}
+
+#fomo .time span:last-child {
+    color: #00a8ff;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: 4px;
+    font-size: 15px;
 }
 
 .hero-section p {
@@ -77,6 +177,12 @@
     margin-top: 20px;
     color: #fff;
     font-size: 1rem;
+}
+
+.email-contact {
+    background: #ddd;
+    border-radius: 0px 0px 4px 4px;
+    padding: 5px;
 }
 
 .review-section img {
@@ -715,6 +821,15 @@
 
     #footer-bottom {
         margin-bottom: 55px;
+    }
+
+    #fomo .buyer {
+        line-height: 1.2;
+    }
+
+    #fomo .product_image {
+        width: 40px;
+        height: 40px;
     }
 }
 
