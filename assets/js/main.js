@@ -153,3 +153,60 @@ function startPopupCycle() {
 
 // Start when the DOM content is loaded
 document.addEventListener("DOMContentLoaded", startPopupCycle);
+
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Counter animation function
+function runCounter(counter) {
+    const target = +counter.getAttribute("data-target");
+    const speed = 200;
+    const increment = Math.ceil(target / speed);
+
+    const updateCount = () => {
+        const current = +counter.innerText.replace(/,/g, ""); // Remove commas
+        if (current < target) {
+            counter.innerText = new Intl.NumberFormat().format(
+                current + increment
+            );
+            setTimeout(updateCount, 10); // Adjust delay between updates
+        } else {
+            counter.innerText = new Intl.NumberFormat().format(target);
+        }
+    };
+
+    updateCount();
+}
+
+// Reset the counter
+function resetCounter(counter) {
+    counter.innerText = "0";
+    counter.classList.remove("counted"); // Allow the counter to reanimate
+}
+
+// Scroll event listener to trigger counters
+window.addEventListener("scroll", () => {
+    const counters = document.querySelectorAll(".counter");
+    counters.forEach((counter) => {
+        if (isInViewport(counter)) {
+            // If in viewport, run the counter
+            if (!counter.classList.contains("counted")) {
+                counter.classList.add("counted");
+                runCounter(counter);
+            }
+        } else {
+            // If out of viewport, reset the counter
+            resetCounter(counter);
+        }
+    });
+});
