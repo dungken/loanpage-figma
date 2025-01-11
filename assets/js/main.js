@@ -66,6 +66,7 @@ window.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
 // List of messages to show
 const messages = [
     {
@@ -120,8 +121,8 @@ const messages = [
 
 let currentIndex = 0;
 
+// Function to show the popup
 function showPopup() {
-    // Get the popup element
     const popup = document.getElementById("fomo");
 
     // Update content dynamically
@@ -136,23 +137,24 @@ function showPopup() {
     // Show the popup
     popup.style.display = "flex";
 
-    // Hide the popup after 5 seconds
-    setTimeout(() => {
-        popup.style.display = "none";
-    }, 5000);
-
     // Move to the next message
     currentIndex = (currentIndex + 1) % messages.length;
+
+    // Hide the popup after 5 seconds
+    setTimeout(hidePopup, 5000);
 }
 
-// Start the popup cycle
-function startPopupCycle() {
-    showPopup(); // Show the first popup immediately
-    setInterval(showPopup, 15000); // Show popup every 15 seconds
+// Function to hide the popup
+function hidePopup() {
+    const popup = document.getElementById("fomo");
+    popup.style.display = "none";
+
+    // Show the next popup after 5 seconds
+    setTimeout(showPopup, 5000);
 }
 
-// Start when the DOM content is loaded
-document.addEventListener("DOMContentLoaded", startPopupCycle);
+// Start the popup cycle when the DOM content is loaded
+document.addEventListener("DOMContentLoaded", showPopup);
 
 // Function to check if an element is in the viewport
 function isInViewport(element) {
