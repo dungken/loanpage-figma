@@ -791,8 +791,8 @@
     }
 
     .hero-section p {
-        padding: 0px 16px;
-        font-size: 18px !important;
+        padding: 0px 0px;
+        font-size: 16px !important;
     }
 
     .progress-bar {
