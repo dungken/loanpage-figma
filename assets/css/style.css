@@ -22,7 +22,7 @@
     width: 100% !important;
     background: linear-gradient(90deg, #405ff2 0%, #1a37c3 100%);
     padding: 20px;
-    border-radius: 5px 5px 0 0;
+    /* border-radius: 5px 5px 0 0; */
 }
 #fomo {
     display: flex;
