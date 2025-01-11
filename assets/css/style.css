@@ -752,7 +752,7 @@
 }
 
 .avatar {
-    border: 2px solid white;
+    border: 2px solid #10d351;
     width: 40px;
     height: 40px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
