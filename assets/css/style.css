@@ -324,6 +324,12 @@
 #grants-assistance-programs .card {
     padding: 11px 12px 11px 12px;
     border-radius: 0%;
+    background: radial-gradient(
+        circle,
+        rgb(245 245 245) 76%,
+        rgb(217 216 216) 100%
+    );
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #grants-assistance-programs .card .card-text,
