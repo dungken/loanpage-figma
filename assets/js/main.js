@@ -152,4 +152,4 @@ function startPopupCycle() {
 }
 
 // Start when the DOM content is loaded
-// document.addEventListener("DOMContentLoaded", startPopupCycle);
+document.addEventListener("DOMContentLoaded", startPopupCycle);

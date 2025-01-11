@@ -41,7 +41,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    top: 82%; /* Đẩy phần tử xuống 70% */
+    top: 83%; /* Đẩy phần tử xuống 70% */
     left: 50%;
     transform: translate(-50%, 50%); /* Bắt đầu từ dưới (ẩn) */
 }
